@@ -1,0 +1,212 @@
+/* Custom color scheme */
+:root {
+  --primary-black: #222831;
+  --light-blue: #8ecae6;
+  --dark-blue: #4a8db7;
+  --text-white: #f5f5f5;
+  --bg-light: #a7b9cd;
+}
+
+/* Override Bootstrap primary colors */
+.bg-primary {
+  background-color: var(--primary-black) !important;
+}
+
+.btn-primary {
+  background-color: var(--light-blue) !important;
+  border-color: var(--light-blue) !important;
+  color: var(--primary-black) !important;
+  font-weight: 500;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--dark-blue) !important;
+  border-color: var(--dark-blue) !important;
+  color: white !important;
+}
+
+.btn-outline-primary {
+  color: var(--light-blue) !important;
+  border-color: var(--light-blue) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: var(--light-blue) !important;
+  color: var(--primary-black) !important;
+}
+
+.btn-success {
+  background-color: var(--light-blue) !important;
+  border-color: var(--dark-blue) !important;
+  color: var(--primary-black) !important;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: var(--dark-blue) !important;
+  border-color: var(--dark-blue) !important;
+}
+
+.btn-outline-success {
+  color: var(--dark-blue) !important;
+  border-color: var(--dark-blue) !important;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus,
+.btn-outline-success:active {
+  background-color: var(--dark-blue) !important;
+  color: white !important;
+}
+
+/* Card styling */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: var(--light-blue) !important;
+  color: var(--primary-black) !important;
+  font-weight: 500;
+}
+
+.card-footer {
+  background-color: var(--bg-light);
+}
+
+.card-header h2 {
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-white);
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-header.bg-primary {
+  background: #0563b9 !important;
+  border-bottom: none;
+  padding: 15px 0;
+}
+
+.logo-header {
+  width: 100%;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #0563b9;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-header .company-logo {
+  height: 50px;
+  margin-right: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+  max-width: 80px;
+}
+
+.logo-header span {
+  display: inline-block;
+  text-align: center;
+}
+
+/* Image upload area styling */
+.upload-container {
+  border-color: var(--light-blue) !important;
+}
+
+.upload-container svg {
+  color: var(--light-blue) !important;
+}
+
+.upload-container.drag-active {
+  border-color: var(--dark-blue) !important;
+  background-color: rgba(142, 202, 230, 0.1) !important;
+}
+
+/* Image container styling */
+.image-display-container img,
+.original-image-container img {
+  border: 1px solid var(--light-blue);
+}
+
+/* Badge styling */
+.badge {
+  font-weight: 500;
+}
+
+/* Alert styling */
+.alert-danger {
+  border-left: 4px solid #dc3545;
+}
+
+.alert-warning {
+  border-left: 4px solid #ffc107;
+}
+
+/* Make the spinner match the new color scheme */
+.spinner-border {
+  color: var(--light-blue) !important;
+}
+
+/* Custom styling for hover effects */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Debug section styling */
+details summary {
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+
+details summary:hover {
+  color: var(--primary-black);
+}
+
+/* Media query for better mobile display */
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-buttons .btn {
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  .logo-header {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .logo-header .company-logo {
+    height: 35px;
+    margin-right: 10px;
+    max-width: 60px;
+  }
+}
